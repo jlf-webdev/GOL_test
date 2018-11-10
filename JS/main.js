@@ -63,7 +63,7 @@ function fullscreen() {
         }
     }
 
-    resize();
+    setTimeout(resize,250);
 }
 
 
