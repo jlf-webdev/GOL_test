@@ -160,8 +160,4 @@ function getOpenSavedButtonPosition(){
   }
 }
 
-function panelResize(){
-  var panelWidth = window.screen.width;
-  panel.style.width = panelWidth;
-  gameStatsContainer.style.width = panelWidth;
-}
+
