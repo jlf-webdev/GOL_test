@@ -420,7 +420,7 @@ function loadPatterns(){
     localStorage.setItem("LastID", 0);
   }
   else if (localStorage.getItem("PatternObjects")  != null){
-    let original = localStorage.getItem("LastID");
+    original = localStorage.getItem("LastID");
     patternId = JSON.parse(original);
     //console.log(original);
 
