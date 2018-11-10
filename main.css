@@ -123,7 +123,7 @@ li{
 
 .plus{
   border : 1px solid;
-  border-color: #222d;
+  border-color: #222;
   border-radius: 5px 5px 0 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -134,7 +134,7 @@ li{
 
 .minus{
   border : 1px solid;
-  border-color: #222d;
+  border-color: #222;
   border-radius: 0 0 5px 5px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -156,7 +156,7 @@ li{
   background: #111b;
   color: #ccc;
   border : 1px solid;
-  border-color: #222d;
+  border-color: #222;
   padding: 5px;
   padding-left: 7px;
   padding-right: 7px;
@@ -203,7 +203,7 @@ li{
   grid-template-columns: repeat(7,1fr);
   background: #5552;
   border-top: 1px solid;
-  border-color: #333d;
+  border-color: #333;
 }
 
 .panelItem{
@@ -323,7 +323,7 @@ li{
     grid-template-columns: repeat(11,1fr);
     background: #5552;
     border-top: 1px solid;
-    border-color: #333d;
+    border-color: #333;
   }
 
   .hidden{
