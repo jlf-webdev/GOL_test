@@ -415,6 +415,7 @@ function storePattern(){
 
 }
 
+var original;
 function loadPatterns(){
   if (localStorage.getItem("LastID") === null || localStorage.getItem("LastID") <=0 ){
     localStorage.setItem("LastID", 0);
