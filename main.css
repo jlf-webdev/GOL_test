@@ -166,9 +166,13 @@ li{
 
 }
 .previous{
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .next{
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .delete{
