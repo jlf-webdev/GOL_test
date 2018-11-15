@@ -50,7 +50,7 @@ function selectBox(e){
     }
 
     gen = 0;
-    genCounterElement.innerText= gen;
+    genCounterElement.innerText= "Generation " + gen;
 
     draw();
   }
