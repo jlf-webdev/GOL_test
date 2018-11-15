@@ -115,7 +115,7 @@ li{
 .plusMinusButtons{
   display: none;
   position:fixed;
-  bottom : 45px;
+  bottom : 47px;
   background: #111b;
   color: #ccc;
 }
@@ -147,7 +147,7 @@ li{
   display: none;
   grid-template-columns: repeat(6, min-content);
   position:fixed;
-  bottom : 45px;
+  bottom : 47px;
   right :0;
   border : 1px solid;
   border-color: #222;
