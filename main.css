@@ -118,12 +118,12 @@ li{
   bottom : 47px;
   background: #111b;
   color: #ccc;
+  border : 1px solid;
+  border-color: #222;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .plus{
-  border : 1px solid;
-  border-color: #222;
-  border-radius: 5px 5px 0 0;
   padding-top: 10px;
   padding-bottom: 10px;
   /*padding: 10px;
@@ -131,10 +131,7 @@ li{
   padding-right: 20px;*/
 }
 
-.minus{
-  border : 1px solid;
-  border-color: #222;
-  border-radius: 0 0 5px 5px;
+.minus{ 
   padding-top: 10px;
   padding-bottom: 10px;
   /*padding: 10px;
