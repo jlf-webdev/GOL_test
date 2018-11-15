@@ -149,20 +149,21 @@ li{
   position:fixed;
   bottom : 45px;
   right :0;
+  border : 1px solid;
+  border-color: #222;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .button{
   background: #111b;
   color: #ccc;
-  border : 1px solid;
-  border-color: #222;
-  padding: 5px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .save{
-  border-radius: 5px 0 0 5px;
+
 }
 .previous{
 }
@@ -174,7 +175,6 @@ li{
 }
 
 .fullscreen{
-  border-radius: 0 5px 5px 0;
 }
 
 #fullscreenIcon_1{
