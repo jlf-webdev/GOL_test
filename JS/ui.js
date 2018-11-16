@@ -374,7 +374,7 @@ function savePattern(){
         }
       }
 
-      if (allowedPatternSize > 0 && allowedPatternSize < 1000){
+      if (allowedPatternSize > 0 && allowedPatternSize < 4000){
         //console.log(saved);
         console.log("Number of cells : " + allowedPatternSize);
         savedPatterns[patternId] = saved;
