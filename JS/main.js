@@ -1,6 +1,6 @@
 // Save can only be donne on min boxWidth=4
 // and if the pattern has max 1000 alive cells
-// mod..
+// mod...
 
 
 
