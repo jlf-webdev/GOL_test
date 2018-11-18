@@ -1,4 +1,3 @@
-
 /*--------PANEL DISPLAY FUNCTIONS-------------------------*/
 
 let panel = document.getElementById('panel');
@@ -29,35 +28,35 @@ var speedDisplayed = 0;
 var gridSizeDisplayed = 0;
 var saveDisplayed = 0;
 
-function hideButtons(){
-  if (speedDisplayed == 1 || gridSizeDisplayed == 1){
+function hideButtons() {
+  if (speedDisplayed == 1 || gridSizeDisplayed == 1) {
     plusMinusButtons.style.display = "none";
     speedDisplayed = 0;
     gridSizeDisplayed = 0;
   }
 
-  if (saveDisplayed == 1){
+  if (saveDisplayed == 1) {
     saveButtons.style.display = "none";
     saveDisplayed = 0;
   }
 }
 
-function hideSpeedButtons(){
+function hideSpeedButtons() {
 
-  if (speedDisplayed == 1 || gridSizeDisplayed == 1){
+  if (speedDisplayed == 1 || gridSizeDisplayed == 1) {
     plusMinusButtons.style.display = "none";
     displayed = 0;
   }
 }
 
-function hideGridButtons(){
-  if (saveDisplayed == 1){
+function hideGridButtons() {
+  if (saveDisplayed == 1) {
     saveButtons.style.display = "none";
     displayed = 0;
   }
 }
 
-function displaySpeedButtons(){
+function displaySpeedButtons() {
   sizeUpButton.removeEventListener('click', boxSizeDown);
   sizeDownButton.removeEventListener('click', boxSizeUp);
   speedUpButton.addEventListener('click', speedUp);
@@ -66,18 +65,17 @@ function displaySpeedButtons(){
 
 
 
-  if (speedDisplayed == 0){
+  if (speedDisplayed == 0) {
     plusMinusButtons.style.display = "grid";
 
 
 
-    if (pageWidth < 480){
-      var margin = Math.floor(pageWidth/7) + "px";
-      var padding = Math.floor(((pageWidth/7) - 20)/2) + "px";
-    }
-    else{
-      var margin = Math.floor(pageWidth/12) + "px";
-      var padding = Math.floor(((pageWidth/12) - 20)/2) + "px";
+    if (pageWidth < 480) {
+      var margin = Math.floor(pageWidth / 7) + "px";
+      var padding = Math.floor(((pageWidth / 7) - 20) / 2) + "px";
+    } else {
+      var margin = Math.floor(pageWidth / 12) + "px";
+      var padding = Math.floor(((pageWidth / 12) - 20) / 2) + "px";
     }
     plus.style.paddingLeft = padding;
     plus.style.paddingRight = padding;
@@ -89,14 +87,13 @@ function displaySpeedButtons(){
     saveButtons.style.display = "none";
     saveDisplayed = 0;
     gridSizeDisplayed = 0;
-  }
-  else{
+  } else {
     plusMinusButtons.style.display = "none";
     speedDisplayed = 0;
   }
 }
 
-function displayGridButtons(){
+function displayGridButtons() {
   speedUpButton.removeEventListener('click', speedUp);
   speedDownButton.removeEventListener('click', speedDown);
   sizeUpButton.addEventListener('click', boxSizeDown);
@@ -104,14 +101,13 @@ function displayGridButtons(){
   plusMinusButtons.style.display = "none";
 
 
-  if (gridSizeDisplayed == 0){
+  if (gridSizeDisplayed == 0) {
     plusMinusButtons.style.display = "grid";
     var margin = 0 + "px";
-    if (pageWidth < 480){
-      var padding = Math.floor(((pageWidth/7) - 20)/2) + "px";
-    }
-    else{
-      var padding = Math.floor(((pageWidth/12) - 20)/2) + "px";
+    if (pageWidth < 480) {
+      var padding = Math.floor(((pageWidth / 7) - 20) / 2) + "px";
+    } else {
+      var padding = Math.floor(((pageWidth / 12) - 20) / 2) + "px";
     }
     plus.style.paddingLeft = padding;
     plus.style.paddingRight = padding;
@@ -122,39 +118,36 @@ function displayGridButtons(){
     saveButtons.style.display = "none";
     saveDisplayed = 0;
     speedDisplayed = 0;
-  }
-  else{
+  } else {
     plusMinusButtons.style.display = "none";
     gridSizeDisplayed = 0;
   }
 }
 
-function displaySaveButtons(){
-  if (saveDisplayed == 0){
+function displaySaveButtons() {
+  if (saveDisplayed == 0) {
     saveButtons.style.display = "grid";
     saveDisplayed = 1;
     plusMinusButtons.style.display = "none";
     speedDisplayed = 0;
     gridSizeDisplayed = 0;
     //noRespawn = 0;
-  }
-  else{
+  } else {
     saveButtons.style.display = "none";
     saveDisplayed = 0;
   }
 
 }
 
-function getOpenSavedButtonPosition(){
-  if (window.innerWidth < 480){
+function getOpenSavedButtonPosition() {
+  if (window.innerWidth < 480) {
     /*var rect = openSavedButton.getBoundingClientRect();
     console.log(rect.top, rect.right, rect.bottom, rect.left);
     var button_center = Math.floor(rect.left + ((rect.right-rect.left)/2));
     console.log(button_center);
     saveButonPosition = button_center - 78;
     saveButtons.style.left = saveButonPosition + "px";*/
-  }
-  else{
+  } else {
     saveButtons.style.display = "none";
     saveDisplayed = 0;
   }
