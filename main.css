@@ -34,7 +34,7 @@ body{
 
 .textWrapper{
   display:grid;
-  grid-template-rows: min-content min-content min-content min-content min-content ;
+  grid-template-rows: min-content min-content min-content min-content min-content min-content ;
   color: green;
   padding: 10px;
   text-align: center;

@@ -19,18 +19,24 @@
     <div id="startScreen" class="startScreen">
       <div class="textWrapper">
         <div class="title">Hi, welcome to this simulation of Conway's Game Of Life.</div>
-        <div class="intro">The Game Of Life is a cellular automaton that consists of a regular grid of cells,
-                           each in one of the two possible states : dead or alive.</div>
-        <div class="rules">For each generation, the next states are determined following these rules : </div>
+        <div class="intro">
+          The Game of Life is an infinite two-dimensional grid with square cells, 
+          that could be in either in a state of live or dead. 
+          Each cell is influenced by the state of its nearest eight neighbors, 
+          in the cardinal and diagonal direction. </div>
+        <div class="rules">
+          Four simple rules dictate the state of any cell at a particular generation: </div>
 
 
          <ul>
-           <li>A live cell with less than two live neighbors dies.</li>
-           <li>A live cell with more than three live neighbors dies.</li>
-           <li>A live cell with two or three live neighbors stays alive.</li>
-           <li>A dead cell with exactly three live neighbors will become a live cell.</li>
+           <li>Any live cell with fewer than two live neighbors dies. [Underpopulation]</li>
+           <li>Any live cell with more than three live neighbors dies. [Overcrowding]</li>
+           <li>Any live cell with two or three live neighbors continues to the next generation. [Stable populations]</li>
+           <li>Any dead cells of exactly three live neighbors will come back to life. [Reproduction]</li>
          </ul>
-
+        <div class="end">
+          The seed is determined by the player, but all subsquent generations are 
+          the result of the initial seed without any human interactions. </div>
 
         <div class="clickToStart" onclick = "displayGame();">Start Game</div>
         <!--<div class="release">release details</div>-->
