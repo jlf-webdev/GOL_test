@@ -43,7 +43,7 @@ function setup() {
   draw();
   genCounterElement.innerText = "Generation 0";
   gridSizeIndicator.innerText = cols + "*" + rows;
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 7; i++) {
     speedDown();
   }
 }
@@ -51,7 +51,7 @@ function setup() {
 var minSize = 1;
 var maxSize = 100;
 var sizeList = [];
-var boxSizeId = 4;
+var boxSizeId = 6;
 
 function createSizeList() {
   sizeList.length = 0;
